@@ -1,1 +1,30 @@
-tyhmdfxgv]pdrhkg]rgl]p
+int main()
+{
+    int counter;
+     PasswordManager p1;
+     loop :
+     p1.welcome();
+    cout<<"\nPress  :  \n\n1.   Create Account \n2.   Login \n3.   Quit"<<endl;
+    cin>>counter;
+
+    switch (counter)
+    {
+    case 1:
+        p1.getDATA();
+        break;
+
+    case 2:
+         p1.login();
+         break;
+
+    case 3:
+    cout<<"You have exited the Code"<<endl;
+        break;
+        
+    }
+    goto loop;
+
+    
+  
+return 0;
+}
